@@ -3,7 +3,7 @@
 # Project README
 
 ## Overview
-Adding functionality to our system
+Resource Management
 
 ## Usage
 
