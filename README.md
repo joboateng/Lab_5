@@ -24,7 +24,7 @@ make clean
 
 ## Example
 
-- Simulate an environment with 3 workers:
+### Simulate an environment with 3 workers:
 
    ```bash
    ./oss -s 5
