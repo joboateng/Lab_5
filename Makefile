@@ -1,14 +1,13 @@
-all: oss worker
+CC=gcc
 
 %.o: %.c 
-	$(CC) -c  -w $<
+    $(CC) -c -w $<
 
 oss: oss.o SM.o time.o queue.o
-	gcc -o oss oss.o SM.o time.o queue.o  -pthread -w
-	
+    $(CC) -o oss oss.o SM.o time.o queue.o -pthread -w
+    
 worker: worker.o SM.o time.o queue.o
-	gcc -o worker worker.o SM.o time.o queue.o -pthread -w
+    $(CC) -o worker worker.o SM.o time.o queue.o -pthread -w
 
 clean:
-	rm oss worker *.o *.out
-
+    rm oss worker *.o *.out
